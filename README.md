@@ -15,7 +15,6 @@ Welcome to my personal web developer portfolio! This project showcases my work, 
 - 🧑‍💻 About Me section
 - 🧰 Projects with live demos and GitHub links
 - 📬 Contact form (email integration optional)
-- 🌙 Dark mode (optional)
 - 📱 Fully responsive layout
 
 ---
@@ -23,12 +22,7 @@ Welcome to my personal web developer portfolio! This project showcases my work, 
 ## 🛠️ Built With
 
 - **React** – UI library
-- **Vite / CRA / Next.js** – Project setup *(adjust based on your setup)*
-- **CSS Modules / Tailwind / Styled-Components** – Styling
+- **Vite** – Project setup 
+- **CSS Modules** – Styling
 - **Framer Motion** – Animations
-- **EmailJS / Formspree** – Contact form handling *(optional)*
-
----
-
-## 📁 Folder Structure
 
