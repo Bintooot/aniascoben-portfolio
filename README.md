@@ -1,6 +1,6 @@
 # 🌐 Personal Portfolio Website
 
-Welcome to my personal web developer portfolio! This project showcases my work, skills, and experience as a frontend (and/or full-stack) developer. Built with modern web technologies and a strong focus on clean design and responsive layout.
+Welcome to my personal web developer portfolio! This project showcases my work, skills, and experience as a frontend developer. Built with modern web technologies and a strong focus on clean design and responsive layout.
 
 ---
 
