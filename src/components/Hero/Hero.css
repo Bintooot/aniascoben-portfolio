@@ -1,0 +1,102 @@
+.hero-section {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("../../assets//backgrounds/Wave.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--main-font);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-family: var(--font-sans);
+  line-height: 50px;
+}
+
+.hero-container > img {
+  width: 466px;
+  height: 588px;
+  box-shadow: 0 10px 20px var(--shadow);
+  border-radius: 20px;
+}
+
+.hero-info > h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  padding: 5px 0;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  z-index: 1;
+}
+
+.hero-info > h2 {
+  font-size: 1.3rem;
+  font-weight: 200;
+  font-family: var(--font-mono);
+}
+
+.hero-info > h3 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  font-family: var(--font-mono);
+}
+
+.hero-info > h3 > span {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.hero-info > h1:hover::before {
+  transform: scaleY(1);
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-info > h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  height: 15px;
+  background: var(--border-right-left);
+  transform: scaleY(1);
+  transform-origin: bottom;
+}
+
+.hero-info > h3 > span:hover:before {
+  transform: scaleY(1);
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-info > h3 > span::before {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  width: 100%;
+  z-index: -1;
+  height: 10px;
+  background: var(--border-right-left);
+  transform: scaleY(1);
+  transform-origin: bottom;
+}
+
+.button-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
