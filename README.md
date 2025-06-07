@@ -1,12 +1,34 @@
-# React + Vite
+# 🌐 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal web developer portfolio! This project showcases my work, skills, and experience as a frontend (and/or full-stack) developer. Built with modern web technologies and a strong focus on clean design and responsive layout.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Demo
 
-## Expanding the ESLint configuration
+👉 [View Portfolio](https://yourdomain.com)  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+
+- 🧑‍💻 About Me section
+- 🧰 Projects with live demos and GitHub links
+- 📬 Contact form (email integration optional)
+- 🌙 Dark mode (optional)
+- 📱 Fully responsive layout
+
+---
+
+## 🛠️ Built With
+
+- **React** – UI library
+- **Vite / CRA / Next.js** – Project setup *(adjust based on your setup)*
+- **CSS Modules / Tailwind / Styled-Components** – Styling
+- **Framer Motion** – Animations
+- **EmailJS / Formspree** – Contact form handling *(optional)*
+
+---
+
+## 📁 Folder Structure
+
