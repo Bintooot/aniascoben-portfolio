@@ -2,7 +2,9 @@
   width: 100%;
   height: 80px;
   top: 0;
+  background: var(--primary-background);
   position: sticky;
+  z-index: 100;
 }
 
 .header-section > .header-content {

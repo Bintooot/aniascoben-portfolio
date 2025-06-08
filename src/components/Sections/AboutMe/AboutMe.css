@@ -1,0 +1,71 @@
+.about-me-section {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../../../assets/backgrounds/Curve.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-me-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+  font-family: var(--font-sans);
+}
+
+.about-me-container > h2 {
+  font-size: 5.6rem;
+}
+
+.about-me-container > p {
+  font-size: 1.5rem;
+  color: var(--secondary-font);
+  position: relative;
+  padding-left: 25px;
+}
+
+.about-me-container > p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 15px;
+  background: var(--border-top-bottom);
+  height: 100%;
+}
+
+ul.info-list {
+  line-height: 3rem;
+}
+ul.info-list > li.info-list-item > span {
+  display: flex;
+  align-items: center;
+}
+
+ul.info-list > li.info-list-item {
+  list-style: none;
+  display: flex;
+  color: var(--secondary-font);
+  gap: 10px;
+  align-items: center;
+}
+
+ul.info-list > li.info-list-item > a {
+  text-decoration: none;
+  color: var(--font-mono);
+}
+
+ul.info-list > li.info-list-item:hover {
+  text-decoration: underline;
+  color: var(--accent);
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}

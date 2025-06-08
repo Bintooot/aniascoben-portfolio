@@ -12,10 +12,13 @@
   --border-right-left: linear-gradient(to right, #8e2de2, #4a00e0);
   --border-top-bottom: linear-gradient(to bottom, #8e2de2, #4a00e0);
   --shadow: #8e2de2;
+  --accent: #c084fc;
   --font-sans: "Montserrat", sans-serif;
   --font-mono: "Roboto Mono", monospace;
 }
 
 body {
+  color: var(--main-font);
   background: var(--primary-background);
+  cursor: default;
 }
