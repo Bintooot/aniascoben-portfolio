@@ -1,16 +1,17 @@
 .services-section {
   width: 100%;
   font-family: var(--font-sans);
-  padding: 50px 0;
 }
 
 .services-container {
   width: 80%;
-  margin: 0 auto;
+  margin: 50px auto;
 }
+
 .services-container > .services-header {
   text-align: end;
   position: relative;
+  padding-right: 25px;
 }
 
 .services-container > .services-header::before {
@@ -18,7 +19,7 @@
   content: "";
   height: 100%;
   width: 15px;
-  margin-left: 10px;
+  right: 0;
   background: var(--border-top-bottom);
 }
 

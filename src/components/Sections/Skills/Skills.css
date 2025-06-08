@@ -1,0 +1,99 @@
+.skills-section {
+  width: 100%;
+  font-family: var(--font-sans);
+  background: url("../../../assets/backgrounds/Curve-Left.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.skills-container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.skills-header {
+  text-align: start;
+  position: relative;
+  padding-left: 25px;
+}
+
+.skills-header::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 15px;
+  left: 0;
+  background: var(--border-top-bottom);
+}
+
+.skills-header > h2 {
+  font-size: 5.6rem;
+  font-weight: 600;
+}
+
+.skills-header > p {
+  color: var(--secondary-font);
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.skills-wrapper {
+  display: flex;
+  margin-top: 50px 0;
+  height: 55vh;
+}
+
+.skills-wrapper > .skills-nav {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.skills-wrapper > .skills-nav > .skills-list {
+  line-height: 30px;
+}
+
+.skills-list > .skills-item {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.skills-list > .skills-item:hover:before {
+  transform: scaleX(1);
+}
+
+.skills-list > .skills-item.active {
+  color: var(--accent);
+}
+
+.skills-list > .skills-item.active::before {
+  transform: scaleX(1);
+}
+
+.skills-list > .skills-item::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background: var(--border-right-left);
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  transform-origin: bottom left;
+  z-index: -1;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.skills-wrapper > .skills-content {
+  flex: 70%;
+}
+
+.skills-data {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}

@@ -1,0 +1,29 @@
+.skills-box {
+  width: 250px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid transparent;
+  border-image-source: var(--border-right-left);
+  border-image-slice: 1;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.skills-box > .image-box {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-box > .image-box > img {
+  width: 40px;
+  height: 40px;
+}
+
+.skills-box > h3 {
+  width: 70%;
+}
