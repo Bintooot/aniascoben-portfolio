@@ -3,12 +3,20 @@ import "./Hero.css";
 import photo from "../../assets/images/photo-me.jpg";
 import Button from "../Button/Button";
 import { ArrowDownToLine, Mail } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <section className="hero-section">
-      <div className="hero-container">
-        <img src={photo} alt="photo.jpg" />
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="hero-container"
+      >
+        <div className="image-wrapper">
+          <img src={photo} alt="Portrait of Ben Raymond Aniasco" />
+        </div>
         <div className="hero-info">
           <h1>FRONT-END DEVELOPER</h1>
           <h2>
@@ -22,7 +30,7 @@ const Hero = () => {
             <Button title="Hire Me" icon={<Mail />} />
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

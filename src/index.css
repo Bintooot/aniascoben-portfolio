@@ -15,3 +15,7 @@
   --font-sans: "Montserrat", sans-serif;
   --font-mono: "Roboto Mono", monospace;
 }
+
+body {
+  background: var(--primary-background);
+}

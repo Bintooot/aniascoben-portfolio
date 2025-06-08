@@ -22,9 +22,10 @@
   line-height: 50px;
 }
 
-.hero-container > img {
+.hero-container > .image-wrapper > img {
   width: 466px;
   height: 588px;
+  padding: 10px;
   box-shadow: 0 10px 20px var(--shadow);
   border-radius: 20px;
 }
