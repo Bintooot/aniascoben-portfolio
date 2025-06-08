@@ -1,7 +1,7 @@
 .hero-section {
   min-height: 100vh;
   width: 100%;
-  background-image: url("../../assets//backgrounds/Wave.svg");
+  background-image: url("../../../assets/backgrounds/Wave.svg");
   background-position: center;
   background-repeat: no-repeat;
   color: var(--main-font);

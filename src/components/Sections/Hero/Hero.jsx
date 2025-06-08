@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hero.css";
-import photo from "../../assets/images/photo-me.jpg";
-import Button from "../Button/Button";
+import photo from "../../../assets/images/photo-me.jpg";
+import Button from "../../Button/Button";
 import { ArrowDownToLine, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 
