@@ -18,6 +18,7 @@
 .box > h3 {
   font-family: var(--font-sans);
   font-size: 5rem;
+  font-weight: 600;
 }
 
 .box > p {

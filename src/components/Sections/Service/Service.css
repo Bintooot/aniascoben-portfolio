@@ -1,0 +1,62 @@
+.services-section {
+  width: 100%;
+  font-family: var(--font-sans);
+  padding: 50px 0;
+}
+
+.services-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.services-container > .services-header {
+  text-align: end;
+  position: relative;
+}
+
+.services-container > .services-header::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 15px;
+  margin-left: 10px;
+  background: var(--border-top-bottom);
+}
+
+.services-container > .services-header > h2 {
+  font-size: 5.6rem;
+}
+
+.services-container > .services-header > p {
+  font-size: 1.5rem;
+  color: var(--secondary-font);
+}
+
+.service-card-wrapper {
+  margin: 50px 0;
+}
+
+.service-card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+.separator > div.line {
+  height: 45vh;
+  background-color: var(--content-card);
+  width: 2px;
+}
+
+.separator > div.circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--background-circle);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 5px var(--shadow));
+}

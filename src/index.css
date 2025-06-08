@@ -11,6 +11,7 @@
   --secondary-font: #d9d9d9;
   --border-right-left: linear-gradient(to right, #8e2de2, #4a00e0);
   --border-top-bottom: linear-gradient(to bottom, #8e2de2, #4a00e0);
+  --background-circle: radial-gradient(circle, #8e2de2, #4a00e0);
   --shadow: #8e2de2;
   --accent: #c084fc;
   --font-sans: "Montserrat", sans-serif;

@@ -7,7 +7,7 @@ import {
   Instagram,
 } from "lucide-react";
 import "./AboutMe.css";
-import Card from "../../Card/Card";
+import Card from "../../Card/AboutMeCard/Card";
 
 const AboutMe = () => {
   return (
