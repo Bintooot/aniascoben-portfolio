@@ -24,6 +24,7 @@
 
 .services-container > .services-header > h2 {
   font-size: 5.6rem;
+  font-weight: 600;
 }
 
 .services-container > .services-header > p {
