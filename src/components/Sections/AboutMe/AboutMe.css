@@ -51,16 +51,30 @@ ul.info-list > li.info-list-item {
   color: var(--secondary-font);
   gap: 10px;
   align-items: center;
+  position: relative;
+}
+
+ul.info-list > li.info-list-item:hover {
+  color: var(--shadow);
+}
+
+ul.info-list > li.info-list-item:hover::before {
+  opacity: 1;
+  transform: translate(0);
+}
+
+ul.info-list > li.info-list-item::before {
+  content: "➔";
+  position: absolute;
+  left: -30px;
+  opacity: 0;
+  transform: translate(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 ul.info-list > li.info-list-item > a {
   text-decoration: none;
   color: var(--font-mono);
-}
-
-ul.info-list > li.info-list-item:hover {
-  text-decoration: underline;
-  color: var(--accent);
 }
 
 .card-wrapper {

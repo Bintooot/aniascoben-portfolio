@@ -1,0 +1,58 @@
+.contact-me-section {
+  width: 100%;
+  height: auto;
+  font-family: var(--font-sans);
+}
+
+.contact-me-container {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.contact-me-container > h2 {
+  font-size: 5rem;
+}
+
+.contact-me-container > p {
+  font-size: 2.5rem;
+}
+
+.contact-me-container > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: 50px;
+}
+
+.contact-me-container > ul > li {
+  list-style-type: none;
+}
+
+.contact-me-container > ul > li > a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--main-font);
+  position: relative;
+}
+
+.contact-me-container > ul > li > a:hover {
+  color: var(--shadow);
+}
+
+.contact-me-container > ul > li > a:hover::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.contact-me-container > ul > li > a::before {
+  content: "➔";
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  left: -30px;
+}
