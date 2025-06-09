@@ -8,6 +8,7 @@ import {
   database,
   others,
 } from "../../../data/data.js";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   const [data, setData] = useState(skills);
@@ -30,7 +31,16 @@ const Skills = () => {
 
   return (
     <section className="skills-section">
-      <div className="skills-container">
+      <motion.div
+        initial={{
+          opacity: 0,
+          x: 100,
+        }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        className="skills-container"
+      >
         <div className="skills-header">
           <h2>My Skills</h2>
           <p>The Stack That Powers My Frontend Craft</p>
@@ -89,7 +99,7 @@ const Skills = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

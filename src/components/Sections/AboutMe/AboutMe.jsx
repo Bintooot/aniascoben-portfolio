@@ -8,11 +8,18 @@ import {
 } from "lucide-react";
 import "./AboutMe.css";
 import Card from "../../Card/AboutMeCard/Card";
+import { motion } from "framer-motion";
 
 const AboutMe = () => {
   return (
     <section className="about-me-section">
-      <div className="about-me-container">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.5 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="about-me-container"
+      >
         <h2>About Me</h2>
         <p>
           I’m a web developer with a strong focus on front-end development and a
@@ -67,11 +74,20 @@ const AboutMe = () => {
             </a>
           </li>
         </ul>
-        <div className="card-wrapper">
-          <Card title="4 years" subtitle="Experience" />
-          <Card title="4 work" subtitle="Projects" />
-        </div>
-      </div>
+      </motion.div>
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: 100,
+        }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.5 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="card-wrapper"
+      >
+        <Card title="4 years" subtitle="Experience" />
+        <Card title="4 work" subtitle="Projects" />
+      </motion.div>
     </section>
   );
 };

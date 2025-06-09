@@ -9,9 +9,13 @@ const Hero = () => {
   return (
     <section className="hero-section">
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{
+          duration: 1,
+          ease: "easeOut",
+        }}
         className="hero-container"
       >
         <div className="image-wrapper">

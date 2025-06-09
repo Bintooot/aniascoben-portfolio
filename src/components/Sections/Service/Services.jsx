@@ -2,11 +2,21 @@ import React from "react";
 import "./Service.css";
 import Card from "../../Card/ServiceCard/Card";
 import { Code, Globe, Waypoints, PanelsTopLeft } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Services = () => {
   return (
     <section className="services-section">
-      <div className="services-container">
+      <motion.div
+        initial={{
+          opacity: 0,
+          x: -100,
+        }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: false, amount: 0.5 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="services-container"
+      >
         <div className="services-header">
           <h2>What I Do</h2>
           <p>My Services</p>
@@ -45,7 +55,7 @@ const Services = () => {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

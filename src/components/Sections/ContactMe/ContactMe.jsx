@@ -1,11 +1,21 @@
 import React from "react";
 import "./ContactMe.css";
 import { Mail, Phone, Linkedin } from "lucide-react";
+import { motion } from "framer-motion";
 
 const ContactMe = () => {
   return (
     <section className="contact-me-section">
-      <div className="contact-me-container">
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: 100,
+        }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        className="contact-me-container"
+      >
         <h2>Have an idea or need help? </h2>
         <p>I'm just one message away.</p>
         <ul>
@@ -38,7 +48,7 @@ const ContactMe = () => {
             </a>
           </li>
         </ul>
-      </div>
+      </motion.div>
     </section>
   );
 };
