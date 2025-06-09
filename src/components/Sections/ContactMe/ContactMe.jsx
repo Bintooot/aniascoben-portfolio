@@ -26,7 +26,11 @@ const ContactMe = () => {
             </a>
           </li>
           <li>
-            <a href="">
+            <a
+              href="https://www.linkedin.com/in/ben-raymond-aniasco-381523334/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <span>
                 <Linkedin />
               </span>

@@ -1,0 +1,11 @@
+.footer-section {
+  text-align: center;
+  font-family: var(--font-sans);
+  padding: 10px 0;
+
+  margin: 20px 0;
+}
+
+.footer-section > h4 {
+  font-weight: 500;
+}
