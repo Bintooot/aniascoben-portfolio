@@ -1,0 +1,38 @@
+.project-section {
+  width: 100%;
+  font-family: var(--font-sans);
+}
+
+.project-container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.project-header {
+  text-align: end;
+  position: relative;
+  padding-right: 25px;
+}
+
+.project-header > h2 {
+  font-size: 5.6rem;
+  font-weight: 600;
+}
+
+.project-header > p {
+  color: var(--secondary-font);
+  font-size: 1.5rem;
+}
+
+.project-header::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 15px;
+  right: 0;
+  background: var(--border-top-bottom);
+}
+
+.project-data-wrapper {
+  margin: 50px 0;
+}

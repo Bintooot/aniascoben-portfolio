@@ -12,6 +12,7 @@
   --border-right-left: linear-gradient(to right, #8e2de2, #4a00e0);
   --border-top-bottom: linear-gradient(to bottom, #8e2de2, #4a00e0);
   --background-circle: radial-gradient(circle, #8e2de2, #4a00e0);
+  --background-span: linear-gradient(to right, #8e2de2, #4e197c);
   --shadow: #8e2de2;
   --accent: #c084fc;
   --font-sans: "Montserrat", sans-serif;
