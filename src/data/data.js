@@ -23,6 +23,7 @@ import DevFinder from "../assets/images/DevFinder.png";
 import Velienne from "../assets/images/Velienne.png";
 import AppController from "../assets/images/App-Controller.png";
 import RMS from "../assets/images/RMS.png";
+import PortfolioV1 from "../assets/images/Portfolio-v1.png";
 
 // Project Data Import End //
 
@@ -134,23 +135,34 @@ export const projectData = [
     description:
       "DevFinder is a responsive web app that allows users to search for GitHub profiles and view key information including avatar, bio, repositories, followers, and more.",
     techStack: ["HTML", "CSS", "JavaScript"],
-    time: "Jun 3, 2025 - Jun 4, 2025",
+    time: "Jun 2025 - Jun 2025",
     github: "https://github.com/Bintooot/DevFinder",
     live: "https://bintooot.github.io/DevFinder/",
   },
   {
     id: 2,
+    name: "Portfolio v.1 | Ben Raymond Aniasco",
+    description:
+      "This is my personal portfolio website, showcasing my skills, projects, and experiences. It features a modern design, responsive layout, and easy navigation to help visitors learn more about me and my work.",
+    image: PortfolioV1,
+    time: "May 2025 - Jun 2025",
+    techStack: ["HTML", "CSS", "JavaScript", "React"],
+    github: "https://github.com/Bintooot/benaniasco-portfolio",
+    live: "https://bintooot.github.io/benaniasco-portfolio/",
+  },
+  {
+    id: 3,
     name: "Velienne - Landing Page",
     description:
       "A visually appealing landing page designed to showcase the Velienne Restaurant. It features a modern design, highlights the restaurant's offerings, and provides an easy-to-navigate interface for users to explore the menu and make reservations.",
     image: Velienne,
-    time: "May 30, 2025 - Jun 2, 2025",
+    time: "May 2025 - Jun 2025",
     techStack: ["HTML", "CSS", "JavaScript", "React"],
     github: "https://github.com/Bintooot/velienne",
     live: "https://bintooot.github.io/velienne/",
   },
   {
-    id: 3,
+    id: 4,
     name: "IoT Based Mobile Incubator Monitoring & Controller",
     description:
       "It is a mobile application that allows users to monitor and control the incubator. It also allows users to view the status of the incubator and the eggs inside it.",
@@ -161,7 +173,7 @@ export const projectData = [
     live: "#",
   },
   {
-    id: 4,
+    id: 5,
     name: "Request Management System",
     description:
       "This project focuses on managing user requests for chicks, specifically designed for government use. The system allows users to register, submit requests, track the status of their requests, and receive the chicks once approved. This web-based platform streamlines the process for individuals seeking chicks for their farms, helping the government efficiently manage and process these requests.",
