@@ -13,8 +13,12 @@ const Services = () => {
           x: -100,
         }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: false, amount: 0.5 }}
-        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: false, amount: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 40,
+          damping: 15,
+        }}
         className="services-container"
       >
         <div className="services-header">

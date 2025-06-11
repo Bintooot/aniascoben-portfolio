@@ -9,12 +9,13 @@ const Hero = () => {
   return (
     <section className="hero-section">
       <motion.div
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{
-          duration: 1,
-          ease: "easeOut",
+          type: "spring",
+          stiffness: 40,
+          damping: 15,
         }}
         className="hero-container"
       >

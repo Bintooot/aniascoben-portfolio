@@ -14,7 +14,11 @@ const Project = () => {
       }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: false, amount: 0.2 }}
-      transition={{ duration: 1, ease: "easeOut" }}
+      transition={{
+        type: "spring",
+        stiffness: 40,
+        damping: 15,
+      }}
       className="project-section"
     >
       <div className="project-container">

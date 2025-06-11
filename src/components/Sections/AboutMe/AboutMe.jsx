@@ -16,8 +16,12 @@ const AboutMe = () => {
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false, amount: 0.5 }}
-        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{
+          type: "spring",
+          stiffness: 40,
+          damping: 15,
+        }}
         className="about-me-container"
       >
         <h2>About Me</h2>
@@ -82,7 +86,11 @@ const AboutMe = () => {
         }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.5 }}
-        transition={{ duration: 1, ease: "easeOut" }}
+        transition={{
+          type: "spring",
+          stiffness: 40,
+          damping: 15,
+        }}
         className="card-wrapper"
       >
         <Card title="4 years" subtitle="Experience" />

@@ -38,7 +38,11 @@ const Skills = () => {
         }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: false, amount: 0.3 }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
+        transition={{
+          type: "spring",
+          stiffness: 40,
+          damping: 15,
+        }}
         className="skills-container"
       >
         <div className="skills-header">
