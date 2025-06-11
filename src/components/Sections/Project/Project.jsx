@@ -7,21 +7,21 @@ import { motion } from "framer-motion";
 const Project = () => {
   const [data] = useState(projectData);
   return (
-    <section className="project-section">
+    <motion.section
+      initial={{
+        opacity: 0,
+        x: -100,
+      }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: false, amount: 0.2 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      className="project-section"
+    >
       <div className="project-container">
-        <motion.div
-          initial={{
-            opacity: 0,
-            x: -100,
-          }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: false, amount: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          className="project-header"
-        >
+        <div className="project-header">
           <h2>What I’ve Done</h2>
           <p>My Projects</p>
-        </motion.div>
+        </div>
         <div className="project-data-wrapper">
           {data.map((item, index) => (
             <ProjectCard
@@ -37,7 +37,7 @@ const Project = () => {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

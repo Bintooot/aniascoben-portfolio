@@ -1,6 +1,9 @@
 .contact-me-section {
   width: 100%;
-  height: auto;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--font-sans);
 }
 

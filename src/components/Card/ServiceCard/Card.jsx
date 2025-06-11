@@ -3,7 +3,7 @@ import "./Card.css";
 
 const Card = (props) => {
   return (
-    <div className="box">
+    <div className="box-service">
       <div className="box-header">
         <span>{props.icon}</span> <h3>{props.title}</h3>
       </div>

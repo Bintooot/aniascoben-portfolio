@@ -1,17 +1,60 @@
 .project-card {
   width: 100%;
-  border: 1px solid transparent;
-  border-image-source: var(--border-right-left);
-  border-image-slice: 1;
+  height: 350px;
+  border: none;
+  background-color: var(--content-card);
   display: flex;
   align-items: center;
   gap: 10px;
   margin: 20px 0;
   padding: 20px;
+  border-radius: 10px;
   gap: 20px;
+  position: relative;
+  z-index: auto;
 }
 
-.image-box-wrapper {
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.project-card::after,
+.project-card::before {
+  --angle: 0deg;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -4;
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    transparent,
+    #8e2de2,
+    #4a00e0,
+    #8e2de2
+  );
+  animation: spin 3s linear infinite;
+}
+
+.project-card::before {
+  filter: blur(10px);
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+.project-card .image-box-wrapper {
   width: 40%;
 }
 

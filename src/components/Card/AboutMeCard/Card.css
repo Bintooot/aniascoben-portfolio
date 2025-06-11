@@ -1,24 +1,9 @@
-.box {
-  width: 524px;
-  height: 245px;
-  border: 1px solid transparent;
-  border-image-source: var(--border-right-left);
-  border-image-slice: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-  align-items: start;
-  justify-content: center;
-
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
 .box > h3 {
   font-family: var(--font-sans);
   font-size: 5rem;
   font-weight: 600;
+  color: var(--shadow);
+  filter: drop-shadow(0 0 10px var(--shadow));
 }
 
 .box > p {
