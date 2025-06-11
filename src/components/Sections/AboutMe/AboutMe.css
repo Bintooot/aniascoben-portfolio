@@ -1,5 +1,6 @@
 .about-me-section {
   width: 100%;
+  min-height: 100vh;
   background-image: url("../../../assets/backgrounds/Curve.svg");
   background-position: center;
   background-repeat: no-repeat;
