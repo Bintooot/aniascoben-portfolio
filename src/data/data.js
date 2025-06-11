@@ -130,7 +130,7 @@ export const projectData = [
   {
     id: 1,
     image: DevFinder,
-    name: "DevFInder",
+    name: "DevFinder",
     alt: "DevFinder.jpeg",
     description:
       "DevFinder is a responsive web app that allows users to search for GitHub profiles and view key information including avatar, bio, repositories, followers, and more.",
