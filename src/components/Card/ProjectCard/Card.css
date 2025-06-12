@@ -113,7 +113,7 @@
   background: var(--border-right-left);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease;
 }
 
 p.tech-stack-wrapper {

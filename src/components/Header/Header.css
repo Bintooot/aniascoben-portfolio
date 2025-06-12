@@ -2,11 +2,21 @@
   width: 100%;
   height: 80px;
   top: 0;
+  background-color: var(--content-card);
   position: sticky;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+}
+
+#close {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+#close:hover {
+  color: var(--accent);
+  cursor: pointer;
+  transform: rotate(90deg);
 }
 
 .header-section > .header-content {
@@ -24,4 +34,74 @@
 
 #toogle {
   cursor: pointer;
+}
+
+/* Sidebar Section */
+
+.sidebar-wrapper {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  display: none;
+  top: 0;
+  right: 0;
+  position: fixed;
+  background: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  gap: 30px;
+  height: 100%;
+}
+
+.sidebar-content > .sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.link-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 4rem;
+  font-family: var(--font-sans);
+  font-weight: 400;
+}
+
+ul.link-wrapper > li.link-item {
+  list-style: none;
+  margin: 0 20px;
+  position: relative;
+}
+
+ul.link-wrapper > li.link-item > a {
+  color: var(--primary-font);
+  text-decoration: none;
+}
+
+ul.link-wrapper > li.link-item::after {
+  position: absolute;
+  content: "←";
+  top: 0;
+  right: -50px;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+ul.link-wrapper > li.link-item:hover {
+  color: var(--accent);
+  cursor: pointer;
+}
+
+ul.link-wrapper > li.link-item:hover::after {
+  transform: translateX(0);
+  opacity: 1;
 }
