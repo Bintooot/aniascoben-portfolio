@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { AlignRight, X } from "lucide-react";
 import logo from "../../assets/icons/logo.png";
 import "./Header.css";
