@@ -6,7 +6,7 @@ Welcome to my personal web developer portfolio! This project showcases my work, 
 
 ## 🔗 Live Demo
 
-👉 [View Portfolio](https://yourdomain.com)  
+👉 [View Portfolio](https://bintooot.github.io/aniascoben-portfolio/)  
 
 ---
 
