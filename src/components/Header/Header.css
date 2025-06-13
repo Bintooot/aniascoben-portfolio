@@ -36,6 +36,10 @@
   cursor: pointer;
 }
 
+#toogle:hover {
+  color: var(--accent);
+}
+
 /* Sidebar Section */
 
 .sidebar-wrapper {

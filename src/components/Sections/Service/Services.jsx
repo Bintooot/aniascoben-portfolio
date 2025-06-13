@@ -7,25 +7,36 @@ import { motion } from "framer-motion";
 const Services = (props) => {
   return (
     <section className="services-section" id={props.id}>
-      <motion.div
-        initial={{
-          opacity: 0,
-          x: -100,
-        }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: false, amount: 0.3 }}
-        transition={{
-          type: "spring",
-          stiffness: 40,
-          damping: 15,
-        }}
-        className="services-container"
-      >
-        <div className="services-header">
+      <div className="services-container">
+        <motion.div
+          initial={{
+            opacity: 0,
+            x: -100,
+          }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{
+            type: "spring",
+            stiffness: 40,
+            damping: 15,
+          }}
+          className="services-header"
+        >
           <h2>What I Do</h2>
           <p>My Services</p>
-        </div>
-        <div className="service-card-wrapper">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{
+            type: "spring",
+            stiffness: 40,
+            damping: 15,
+            delay: 0.5,
+          }}
+          className="service-card-wrapper"
+        >
           <div className="service-card-content">
             <Card
               title="Frontend Development"
@@ -58,8 +69,8 @@ const Services = (props) => {
               description="I translate Figma or other design files into fully functional, pixel-perfect web interfaces with attention to detail and accessibility."
             />
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </section>
   );
 };
