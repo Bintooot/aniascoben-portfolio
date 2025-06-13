@@ -43,7 +43,6 @@
 .skills-wrapper {
   display: flex;
   margin-top: 50px 0;
-  height: 55vh;
 }
 
 .skills-wrapper > .skills-nav {
@@ -96,6 +95,15 @@
 
 .skills-data {
   display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+@media (max-width: 1024px) {
+  .skills-container {
+    width: 85%;
+  }
+  .skills-header > h2 {
+    font-size: 5rem;
+  }
 }

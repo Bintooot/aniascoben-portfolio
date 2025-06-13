@@ -41,13 +41,11 @@
 }
 
 /* Sidebar Section */
-
 .sidebar-wrapper {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 20px;
   top: 0;
-  right: 0;
   position: fixed;
   background: rgba(20, 20, 20, 0.8);
   backdrop-filter: blur(10px);
@@ -99,6 +97,7 @@ ul.link-wrapper > li.link-item::after {
   position: absolute;
   content: "←";
   top: 0;
+  font-size: 2.3rem;
   right: -50px;
   opacity: 0;
   transform: translateX(20px);
@@ -118,4 +117,18 @@ ul.link-wrapper > li.link-item:hover {
 ul.link-wrapper > li.link-item:hover::after {
   transform: translateX(0);
   opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .header-section > .header-content {
+    width: 100%;
+    margin: 0;
+  }
+
+  ul.link-wrapper > li.link-item > a {
+    font-size: 3rem;
+  }
+  .sidebar-content {
+    gap: 20px;
+  }
 }

@@ -80,16 +80,14 @@ const AboutMe = (props) => {
         </ul>
       </motion.div>
       <motion.div
-        initial={{
-          opacity: 0,
-          y: 100,
-        }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false, amount: 0.5 }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: false, amount: 0.3 }}
         transition={{
           type: "spring",
           stiffness: 40,
           damping: 15,
+          delay: 0.5,
         }}
         className="card-wrapper"
       >

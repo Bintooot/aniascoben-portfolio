@@ -1,6 +1,6 @@
 import React from "react";
 import "./ContactMe.css";
-import { Mail, Phone, Linkedin } from "lucide-react";
+import { Mail, Phone, Linkedin, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 const ContactMe = (props) => {
@@ -46,6 +46,18 @@ const ContactMe = (props) => {
                 <Linkedin />
               </span>
               LinkedIn
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ben-raymond-aniasco-381523334/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>
+                <MessageCircle />
+              </span>
+              Messenger
             </a>
           </li>
         </ul>

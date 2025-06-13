@@ -41,6 +41,7 @@
 ul.info-list {
   line-height: 3rem;
 }
+
 ul.info-list > li.info-list-item > span {
   display: flex;
   align-items: center;
@@ -85,4 +86,28 @@ ul.info-list > li.info-list-item > a {
   justify-content: space-around;
   align-items: center;
   padding: 10px;
+}
+
+/* Laptop or Tablet Mode */
+/* width <= 1024px */
+
+@media (max-width: 1024px) {
+  .about-me-container {
+    width: 85%;
+  }
+
+  .card-wrapper {
+    width: 85%;
+  }
+  .about-me-container > h2 {
+    font-size: 5rem;
+  }
+
+  .about-me-container > p {
+    font-size: 1.3rem;
+  }
+
+  ul.info-list > li.info-list-item {
+    font-size: 1rem;
+  }
 }

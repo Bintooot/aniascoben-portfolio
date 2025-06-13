@@ -36,3 +36,12 @@
 .project-data-wrapper {
   margin: 50px 0;
 }
+
+@media (max-width: 1024px) {
+  .project-container {
+    width: 85%;
+  }
+  .project-header > h2 {
+    font-size: 5rem;
+  }
+}

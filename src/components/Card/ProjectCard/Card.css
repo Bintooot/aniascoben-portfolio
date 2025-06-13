@@ -128,3 +128,13 @@ p.tech-stack-wrapper > span.tech-stack-list {
   padding: 3px 6px;
   background: var(--background-span);
 }
+
+@media (max-width: 1024px) {
+  .data-info-wrapper > h3 {
+    font-size: 2rem;
+  }
+
+  .data-info-wrapper > p {
+    font-size: 0.8rem;
+  }
+}

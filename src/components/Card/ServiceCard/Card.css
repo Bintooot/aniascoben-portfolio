@@ -61,6 +61,12 @@
   gap: 20px;
 }
 
+.box-header > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .box-header > h3 {
   font-size: 2rem;
   font-weight: 600;
@@ -68,5 +74,16 @@
 
 .box-service > p.description {
   font-size: 1rem;
+  text-align: justify;
   color: var(--secondary-font);
+}
+
+@media (max-width: 1024px) {
+  .box-header > h3 {
+    font-size: 1.8rem;
+  }
+
+  .box-service > p.description {
+    font-size: 0.8rem;
+  }
 }
