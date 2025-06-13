@@ -10,7 +10,7 @@ import {
 } from "../../../data/data.js";
 import { motion } from "framer-motion";
 
-const Skills = () => {
+const Skills = (props) => {
   const [data, setData] = useState(skills);
   const [active, setActive] = useState("All");
 
@@ -30,7 +30,7 @@ const Skills = () => {
   };
 
   return (
-    <section className="skills-section">
+    <section className="skills-section" id={props.id}>
       <motion.div
         initial={{
           opacity: 0,

@@ -10,9 +10,9 @@ import "./AboutMe.css";
 import Card from "../../Card/AboutMeCard/Card";
 import { motion } from "framer-motion";
 
-const AboutMe = () => {
+const AboutMe = (props) => {
   return (
-    <section className="about-me-section">
+    <section className="about-me-section" id={props.id}>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -19,6 +19,12 @@
   --font-mono: "Roboto Mono", monospace;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 body {
   color: var(--main-font);
   background: var(--primary-background);

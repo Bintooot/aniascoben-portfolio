@@ -5,9 +5,9 @@ import Button from "../../Button/Button";
 import { ArrowDownToLine, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 
-const Hero = () => {
+const Hero = (props) => {
   return (
-    <section className="hero-section">
+    <section className="hero-section" id={props.id}>
       <motion.div
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -3,7 +3,7 @@ import "./ContactMe.css";
 import { Mail, Phone, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 
-const ContactMe = () => {
+const ContactMe = (props) => {
   return (
     <section className="contact-me-section">
       <motion.div
@@ -15,6 +15,7 @@ const ContactMe = () => {
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
         className="contact-me-container"
+        id={props.id}
       >
         <h2>Have an idea or need help? </h2>
         <p>I'm just one message away.</p>

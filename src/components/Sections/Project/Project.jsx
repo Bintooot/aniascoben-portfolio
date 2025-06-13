@@ -4,7 +4,7 @@ import ProjectCard from "../../Card/ProjectCard/Card";
 import { projectData } from "../../../data/data.js";
 import { motion } from "framer-motion";
 
-const Project = () => {
+const Project = (props) => {
   const [data] = useState(projectData);
   return (
     <motion.section
@@ -20,6 +20,7 @@ const Project = () => {
         damping: 15,
       }}
       className="project-section"
+      id={props.id}
     >
       <div className="project-container">
         <div className="project-header">

@@ -4,9 +4,9 @@ import Card from "../../Card/ServiceCard/Card";
 import { Code, Globe, Waypoints, PanelsTopLeft } from "lucide-react";
 import { motion } from "framer-motion";
 
-const Services = () => {
+const Services = (props) => {
   return (
-    <section className="services-section">
+    <section className="services-section" id={props.id}>
       <motion.div
         initial={{
           opacity: 0,

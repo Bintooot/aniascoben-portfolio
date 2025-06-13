@@ -42,13 +42,18 @@
   width: 100%;
   height: 100vh;
   padding: 20px;
-  display: none;
   top: 0;
   right: 0;
   position: fixed;
   background: rgba(20, 20, 20, 0.8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+}
+
+.sidebar-wrapper.open {
+  transform: translateX(0);
 }
 
 .sidebar-content {
@@ -94,6 +99,11 @@ ul.link-wrapper > li.link-item::after {
   opacity: 0;
   transform: translateX(20px);
   transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+ul.link-wrapper > li.link-item > a.active {
+  color: var(--accent);
+  font-weight: 600;
 }
 
 ul.link-wrapper > li.link-item:hover {
