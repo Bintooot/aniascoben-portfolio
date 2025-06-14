@@ -74,3 +74,24 @@
     font-size: 5rem;
   }
 }
+
+/* Laptop or Tablet Mode */
+/* width <= 768px */
+
+@media (max-width: 768px) {
+  .services-container {
+    width: 90%;
+  }
+  .services-container > .services-header > h2 {
+    font-size: 4rem;
+  }
+
+  .service-card-content {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .separator {
+    display: none;
+  }
+}

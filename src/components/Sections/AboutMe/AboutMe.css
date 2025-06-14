@@ -111,3 +111,19 @@ ul.info-list > li.info-list-item > a {
     font-size: 1rem;
   }
 }
+
+/*  Tablet Mode */
+/* width <= 768px */
+
+@media (max-width: 768px) {
+  .about-me-container > h2 {
+    font-size: 4.5rem;
+  }
+  .about-me-container > p {
+    font-size: 1.1rem;
+  }
+
+  ul.info-list > li.info-list-item {
+    font-size: 1rem;
+  }
+}

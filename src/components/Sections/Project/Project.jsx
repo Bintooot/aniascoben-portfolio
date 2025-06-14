@@ -13,11 +13,12 @@ const Project = (props) => {
         x: -100,
       }}
       whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: false, amount: 0.2 }}
+      viewport={{ once: false }}
       transition={{
         type: "spring",
         stiffness: 40,
         damping: 15,
+        delay: 0.5,
       }}
       className="project-section"
       id={props.id}

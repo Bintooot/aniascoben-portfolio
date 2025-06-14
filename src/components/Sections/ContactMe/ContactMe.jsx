@@ -13,7 +13,12 @@ const ContactMe = (props) => {
         }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.3 }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
+        transition={{
+          type: "spring",
+          stiffness: 40,
+          damping: 15,
+          delay: 0.5,
+        }}
         className="contact-me-container"
         id={props.id}
       >

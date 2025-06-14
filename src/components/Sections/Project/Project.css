@@ -45,3 +45,19 @@
     font-size: 5rem;
   }
 }
+
+/* Tablet Mode */
+/* width <= 768px */
+
+@media (max-width: 768px) {
+  .project-container {
+    width: 90%;
+  }
+  .project-header > h2 {
+    font-size: 4rem;
+  }
+  .project-header > p {
+    color: var(--secondary-font);
+    font-size: 1.3rem;
+  }
+}

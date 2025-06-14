@@ -16,11 +16,12 @@ const AboutMe = (props) => {
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: false }}
         transition={{
           type: "spring",
           stiffness: 40,
           damping: 15,
+          delay: 0.5,
         }}
         className="about-me-container"
       >
@@ -82,7 +83,7 @@ const AboutMe = (props) => {
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: false }}
         transition={{
           type: "spring",
           stiffness: 40,

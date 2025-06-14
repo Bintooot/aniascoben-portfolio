@@ -23,3 +23,19 @@
     font-size: 3.45rem;
   }
 }
+
+/* Laptop or Tablet Mode */
+/* width <= 768px */
+
+@media (max-width: 768px) {
+  .box {
+    text-align: center;
+  }
+
+  .box > h3 {
+    font-size: 4rem;
+  }
+  .box > p {
+    font-size: 3rem;
+  }
+}

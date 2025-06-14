@@ -125,3 +125,41 @@
     font-size: 1.5rem;
   }
 }
+
+/*  Tablet Mode */
+/* width <= 768 */
+
+@media (max-width: 768px) {
+  .hero-container > .image-wrapper > img {
+    width: 350px;
+    height: 450px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .hero-info {
+    text-align: center;
+  }
+
+  .hero-info > h1::before {
+    bottom: 15px;
+  }
+
+  .hero-info > h1 {
+    display: inline;
+    font-size: 3.3rem;
+  }
+  .hero-info > h2 {
+    font-size: 1rem;
+  }
+  .hero-info > h3 {
+    font-size: 1.4rem;
+  }
+
+  .button-box {
+    justify-content: center;
+    flex-direction: row;
+  }
+}

@@ -1,6 +1,6 @@
 .project-card {
   width: 100%;
-  height: 350px;
+  min-height: 350px;
   border: none;
   background-color: var(--content-card);
   display: flex;
@@ -136,5 +136,34 @@ p.tech-stack-wrapper > span.tech-stack-list {
 
   .data-info-wrapper > p {
     font-size: 0.8rem;
+  }
+}
+
+/* Tablet Mode */
+/* width <= 768px */
+
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+  }
+
+  .project-card .image-box-wrapper {
+    width: 100%;
+  }
+
+  .data-info-wrapper {
+    width: 100%;
+  }
+
+  .data-info-wrapper > h3 {
+    font-size: 2.5rem;
+  }
+
+  .data-info-wrapper > p {
+    font-size: 1rem;
+  }
+
+  .link-wrapper {
+    justify-content: center;
   }
 }

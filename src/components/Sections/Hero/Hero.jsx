@@ -11,11 +11,12 @@ const Hero = (props) => {
       <motion.div
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: false }}
         transition={{
           type: "spring",
           stiffness: 40,
           damping: 15,
+          delay: 0.5,
         }}
         className="hero-container"
       >
