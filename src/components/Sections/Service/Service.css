@@ -95,3 +95,24 @@
     display: none;
   }
 }
+
+/* Mobile Mode */
+/* width <= 426px */
+
+@media (max-width: 426px) {
+  .services-container > .services-header > h2 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .services-container > .services-header > h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 321px) {
+  .services-container > .services-header > h2 {
+    font-size: 2.5rem;
+  }
+}

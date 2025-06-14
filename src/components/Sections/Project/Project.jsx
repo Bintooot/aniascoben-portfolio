@@ -8,11 +8,8 @@ const Project = (props) => {
   const [data] = useState(projectData);
   return (
     <motion.section
-      initial={{
-        opacity: 0,
-        x: -100,
-      }}
-      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false }}
       transition={{
         type: "spring",

@@ -43,7 +43,7 @@
 /* Sidebar Section */
 .sidebar-wrapper {
   width: 100%;
-  min-height: 100vh;
+  min-height: 120vh;
   padding: 20px;
   top: 0;
   position: fixed;
@@ -64,7 +64,7 @@
   width: 90%;
   margin: 0 auto;
   gap: 30px;
-  height: 100%;
+  min-height: 100%;
 }
 
 .sidebar-content > .sidebar-header {
@@ -130,5 +130,54 @@ ul.link-wrapper > li.link-item:hover::after {
   }
   .sidebar-content {
     gap: 20px;
+  }
+  ul.link-wrapper > li.link-item::after {
+    top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  ul.link-wrapper > li.link-item::after {
+    right: -20px;
+    top: 10px;
+  }
+}
+
+@media (max-width: 426px) {
+  ul.link-wrapper > li.link-item > a {
+    font-size: 2.5rem;
+  }
+
+  .sidebar-content {
+    gap: 10px;
+  }
+
+  ul.link-wrapper > li.link-item::after {
+    right: -10px;
+    top: 20px;
+  }
+}
+
+@media (max-width: 376px) {
+  ul.link-wrapper > li.link-item > a {
+    font-size: 2.3rem;
+  }
+
+  .sidebar-content {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 321px) {
+  ul.link-wrapper > li.link-item > a {
+    font-size: 2rem;
+  }
+
+  ul.link-wrapper > li.link-item::after {
+    top: 30px;
+    font-size: 2rem;
+  }
+  .sidebar-content {
+    gap: 5px;
   }
 }

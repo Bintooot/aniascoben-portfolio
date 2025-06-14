@@ -1,6 +1,6 @@
 .box-service {
   width: 563px;
-  height: 283px;
+  min-height: 283px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,5 +85,24 @@
 
   .box-service > p.description {
     font-size: 0.8rem;
+  }
+}
+
+/*  Mobile Mode */
+/* width <= 426px */
+
+@media (max-width: 426px) {
+  .box-service {
+    width: 100%;
+  }
+
+  .box-header > h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .box-header > h3 {
+    font-size: 1.2rem;
   }
 }

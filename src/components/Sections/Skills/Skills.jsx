@@ -31,26 +31,34 @@ const Skills = (props) => {
 
   return (
     <section className="skills-section" id={props.id}>
-      <motion.div
-        initial={{
-          opacity: 0,
-          x: 30,
-        }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: false }}
-        transition={{
-          type: "spring",
-          stiffness: 40,
-          damping: 15,
-          delay: 0.5,
-        }}
-        className="skills-container"
-      >
-        <div className="skills-header">
+      <div className="skills-container">
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false }}
+          transition={{
+            type: "spring",
+            stiffness: 40,
+            damping: 15,
+            delay: 0.5,
+          }}
+          className="skills-header"
+        >
           <h2>My Skills</h2>
           <p>The Stack That Powers My Frontend Craft</p>
-        </div>
-        <div className="skills-wrapper">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: false }}
+          transition={{
+            type: "spring",
+            stiffness: 40,
+            damping: 15,
+            delay: 0.5,
+          }}
+          className="skills-wrapper"
+        >
           <div className="skills-nav">
             <ul className="skills-list">
               <li
@@ -103,8 +111,8 @@ const Skills = (props) => {
               ))}
             </div>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </section>
   );
 };

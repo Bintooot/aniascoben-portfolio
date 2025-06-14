@@ -39,3 +39,24 @@
     font-size: 3rem;
   }
 }
+
+/* Mobile Mode */
+/* width <= 426px */
+
+@media (max-width: 426px) {
+  .box > h3 {
+    font-size: 3.4rem;
+  }
+  .box > p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 321px) {
+  .box > h3 {
+    font-size: 3rem;
+  }
+  .box > p {
+    font-size: 1.5rem;
+  }
+}

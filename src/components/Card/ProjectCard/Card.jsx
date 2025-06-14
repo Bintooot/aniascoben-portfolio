@@ -1,9 +1,22 @@
 import React from "react";
 import "./Card.css";
+import { motion } from "framer-motion";
 
 const Card = (props) => {
   return (
-    <div className="project-card" key={props.key}>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: false, amount: 0.1 }}
+      transition={{
+        type: "spring",
+        stiffness: 40,
+        damping: 15,
+        delay: 0.5,
+      }}
+      className="project-card"
+      key={props.key}
+    >
       <div className="image-box-wrapper">
         <img src={props.image} alt={props.alt} />
       </div>
@@ -29,7 +42,7 @@ const Card = (props) => {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

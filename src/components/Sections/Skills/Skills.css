@@ -144,3 +144,33 @@
     place-items: center;
   }
 }
+
+/* Mobile Mode */
+/* width <= 426px */
+
+@media (max-width: 426px) {
+  .skills-wrapper > .skills-nav {
+    overflow-x: scroll;
+  }
+  .skills-header > h2 {
+    font-size: 3.5rem;
+  }
+
+  .skills-header > p {
+    font-size: 1rem;
+  }
+
+  .skills-wrapper {
+    margin-top: 50px 0;
+  }
+}
+
+@media (max-width: 376px) {
+  .skills-header > h2 {
+    font-size: 3rem;
+  }
+
+  .skills-header > p {
+    font-size: 0.9rem;
+  }
+}

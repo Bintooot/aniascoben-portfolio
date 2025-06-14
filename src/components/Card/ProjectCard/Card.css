@@ -5,11 +5,10 @@
   background-color: var(--content-card);
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin: 20px 0;
+  gap: 20px;
+  margin-top: 20px;
   padding: 20px;
   border-radius: 10px;
-  gap: 20px;
   position: relative;
   z-index: auto;
 }
@@ -19,18 +18,16 @@
   initial-value: 0deg;
   inherits: false;
 }
-
 .project-card::after,
 .project-card::before {
-  --angle: 0deg;
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -4;
+  z-index: -1;
   width: 100%;
-  border-radius: 10px;
   height: 100%;
+  border-radius: 10px;
   background-image: conic-gradient(
     from var(--angle),
     transparent,
@@ -165,5 +162,26 @@ p.tech-stack-wrapper > span.tech-stack-list {
 
   .link-wrapper {
     justify-content: center;
+  }
+}
+/* Tablet Mode */
+/* width <= 426px */
+
+@media (max-width: 426px) {
+  .data-info-wrapper > h3 {
+    font-size: 2rem;
+  }
+
+  .data-info-wrapper > p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 321px) {
+  .data-info-wrapper > h3 {
+    font-size: 1.5rem;
+  }
+  .data-info-wrapper > p {
+    font-size: 0.8rem;
   }
 }

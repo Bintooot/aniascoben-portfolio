@@ -4,8 +4,8 @@ import "./Button.css";
 const Button = (props) => {
   return (
     <div className="button-wrapper">
-      <p> {props.title} </p>
-      <span>{props.icon}</span>
+      <p className="button-title"> {props.title} </p>
+      <span className="button-icon">{props.icon}</span>
     </div>
   );
 };
