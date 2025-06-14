@@ -10,7 +10,7 @@
   padding: 20px;
   border-radius: 10px;
   position: relative;
-  z-index: auto;
+  z-index: inherit;
 }
 
 @property --angle {
