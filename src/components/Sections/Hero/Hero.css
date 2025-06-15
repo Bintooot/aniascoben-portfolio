@@ -81,7 +81,7 @@
 
 .hero-info > h3 > span:hover:before {
   transform: scaleY(1);
-  height: 100%;
+  height: 75%;
   transition: all 0.2s ease-in-out;
 }
 
@@ -102,6 +102,11 @@
   flex-direction: column;
   gap: 20px;
   margin-top: 20px;
+}
+
+.button-box > a {
+  color: var(--primary-font);
+  text-decoration: none;
 }
 
 /* Laptop or Tablet Mode */

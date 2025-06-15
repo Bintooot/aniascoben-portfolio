@@ -32,8 +32,12 @@ const Hero = (props) => {
             → Hello, I’m <span>Ben Raymond Aniasco</span>
           </h3>
           <div className="button-box">
-            <Button title="Download CV" icon={<ArrowDownToLine />} />
-            <Button title="Hire Me" icon={<Mail />} />
+            <a href="/CV.pdf" download>
+              <Button title="Download CV" icon={<ArrowDownToLine />} />
+            </a>
+            <a href="#contact-me">
+              <Button title="Hire Me" icon={<Mail />} />
+            </a>
           </div>
         </div>
       </motion.div>
