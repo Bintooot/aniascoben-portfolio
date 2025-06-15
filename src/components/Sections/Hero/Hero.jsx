@@ -32,7 +32,7 @@ const Hero = (props) => {
             → Hello, I’m <span>Ben Raymond Aniasco</span>
           </h3>
           <div className="button-box">
-            <a href="/CV.pdf" download>
+            <a href="CV.pdf" download="CV.pdf">
               <Button title="Download CV" icon={<ArrowDownToLine />} />
             </a>
             <a href="#contact-me">
