@@ -55,7 +55,7 @@ const ContactMe = (props) => {
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/ben-raymond-aniasco-381523334/"
+              href="https://www.messenger.com/e2ee/t/9625184080914205/"
               target="_blank"
               rel="noopener noreferrer"
             >
