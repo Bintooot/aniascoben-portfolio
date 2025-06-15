@@ -143,6 +143,7 @@
   }
 
   .hero-container {
+    padding-top: 20px;
     flex-direction: column;
   }
 
