@@ -38,7 +38,6 @@ const Header = () => {
       <div className={`sidebar-wrapper ${open ? "open" : "closed"}`}>
         <div className="sidebar-content">
           <div className="sidebar-header">
-            <img src={logo} alt="logo.png" width={100} height={100} />
             <X size={40} id="close" onClick={() => setOpen((prev) => !prev)} />
           </div>
           <ul className="link-wrapper">
