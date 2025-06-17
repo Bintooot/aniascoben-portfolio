@@ -40,7 +40,7 @@ const Header = () => {
           <div className="sidebar-header">
             <X size={40} id="close" onClick={() => setOpen((prev) => !prev)} />
           </div>
-          <hr style={{ border: "1px solid gray" }} />
+
           <ul className="link-wrapper">
             {links.map((items) => (
               <li className="link-item" key={items.id}>
