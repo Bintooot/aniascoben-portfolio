@@ -137,7 +137,7 @@ export const projectData = [
     techStack: ["HTML", "CSS", "JavaScript"],
     time: "Jun 2025 - Jun 2025",
     github: "https://github.com/Bintooot/DevFinder",
-    live: "https://bintooot.github.io/DevFinder/",
+    live: "https://dev-finder-bintooots-projects.vercel.app/",
   },
   {
     id: 2,
