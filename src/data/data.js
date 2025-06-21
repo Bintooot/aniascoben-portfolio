@@ -148,7 +148,7 @@ export const projectData = [
     time: "May 2025 - Jun 2025",
     techStack: ["HTML", "CSS", "JavaScript", "React"],
     github: "https://github.com/Bintooot/benaniasco-portfolio",
-    live: "https://bintooot.github.io/benaniasco-portfolio/",
+    live: "https://benaniasco-portfolio.vercel.app",
   },
   {
     id: 3,
@@ -159,7 +159,7 @@ export const projectData = [
     time: "May 2025 - Jun 2025",
     techStack: ["HTML", "CSS", "JavaScript", "React"],
     github: "https://github.com/Bintooot/velienne",
-    live: "https://bintooot.github.io/velienne/",
+    live: "https://velienne.vercel.app",
   },
   {
     id: 4,
