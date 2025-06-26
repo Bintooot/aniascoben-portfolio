@@ -6,10 +6,6 @@
   align-items: center;
 }
 
-.slider-wrapper {
-  animation: slider 2s ease-in-out infinite alternate;
-}
-
 .circle-content {
   width: 3rem;
   height: 3rem;
@@ -42,11 +38,3 @@
   }
 }
 
-@keyframes slider {
-  from {
-    transform: translateX(-300px);
-  }
-  to {
-    transform: translateX(300px);
-  }
-}
