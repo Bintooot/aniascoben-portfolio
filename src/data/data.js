@@ -24,6 +24,7 @@ import Velienne from "../assets/images/Velienne.png";
 import AppController from "../assets/images/App-Controller.png";
 import RMS from "../assets/images/RMS.png";
 import PortfolioV1 from "../assets/images/Portfolio-v1.png";
+import SmarTask from "../assets/images/SmarTask.png";
 
 // Project Data Import End //
 
@@ -129,40 +130,53 @@ export const others = skills.filter((item) => [4, 8, 6, 9].includes(item.id));
 export const projectData = [
   {
     id: 1,
+    image: SmarTask,
+    name: "SmarTask",
+    alt: "SmarTask.png",
+    description:
+      "SmarTask is a full-stack task and team management web application designed to simplify workflows, improve collaboration, and help users manage tasks with clarity and ease.",
+    techStack: ["HTML", "CSS", "JavaScript", "React"],
+    time: "June 2025 – Ongoing",
+    github: "https://github.com/Bintooot/smartask",
+    live: "#",
+  },
+
+  {
+    id: 2,
     image: DevFinder,
     name: "DevFinder",
     alt: "DevFinder.jpeg",
     description:
       "DevFinder is a responsive web app that allows users to search for GitHub profiles and view key information including avatar, bio, repositories, followers, and more.",
     techStack: ["HTML", "CSS", "JavaScript"],
-    time: "Jun 2025 - Jun 2025",
+    time: "June 2025 - June 2025",
     github: "https://github.com/Bintooot/DevFinder",
     live: "https://dev-finder-bintooots-projects.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     name: "Portfolio v.1 | Ben Raymond Aniasco",
     description:
       "This is my personal portfolio website, showcasing my skills, projects, and experiences. It features a modern design, responsive layout, and easy navigation to help visitors learn more about me and my work.",
     image: PortfolioV1,
-    time: "May 2025 - Jun 2025",
+    time: "May 2025 - June 2025",
     techStack: ["HTML", "CSS", "JavaScript", "React"],
     github: "https://github.com/Bintooot/benaniasco-portfolio",
     live: "https://benaniasco-portfolio.vercel.app",
   },
   {
-    id: 3,
+    id: 4,
     name: "Velienne - Landing Page",
     description:
       "A visually appealing landing page designed to showcase the Velienne Restaurant. It features a modern design, highlights the restaurant's offerings, and provides an easy-to-navigate interface for users to explore the menu and make reservations.",
     image: Velienne,
-    time: "May 2025 - Jun 2025",
+    time: "May 2025 - June 2025",
     techStack: ["HTML", "CSS", "JavaScript", "React"],
     github: "https://github.com/Bintooot/velienne",
     live: "https://velienne.vercel.app",
   },
   {
-    id: 4,
+    id: 5,
     name: "IoT Based Mobile Incubator Monitoring & Controller",
     description:
       "It is a mobile application that allows users to monitor and control the incubator. It also allows users to view the status of the incubator and the eggs inside it.",
@@ -173,7 +187,7 @@ export const projectData = [
     live: "#",
   },
   {
-    id: 5,
+    id: 6,
     name: "Request Management System",
     description:
       "This project focuses on managing user requests for chicks, specifically designed for government use. The system allows users to register, submit requests, track the status of their requests, and receive the chicks once approved. This web-based platform streamlines the process for individuals seeking chicks for their farms, helping the government efficiently manage and process these requests.",
