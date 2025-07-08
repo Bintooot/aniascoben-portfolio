@@ -1,5 +1,4 @@
 // Skills Data Import Start //
-
 import HTML5 from "../assets/icons/HTML5.png";
 import CSS from "../assets/icons/CSS3.png";
 import JavaScript from "../assets/icons/JavaScript.png";
