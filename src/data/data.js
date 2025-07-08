@@ -14,7 +14,7 @@ import MySQL from "../assets/icons/MySQL.png";
 import Node from "../assets/icons/Node.js.png";
 import React from "../assets/icons/React.png";
 import TailwindCss from "../assets/icons/TailwindCss.png";
-import Vite from "../assets/icons/vitejs.svg";
+import Vite from "../assets/icons/vitejs.png";
 
 // Skills Data Import End //
 
