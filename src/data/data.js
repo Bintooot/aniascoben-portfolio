@@ -14,6 +14,7 @@ import MySQL from "../assets/icons/MySQL.png";
 import Node from "../assets/icons/Node.js.png";
 import React from "../assets/icons/React.png";
 import TailwindCss from "../assets/icons/TailwindCss.png";
+import Vite from "../assets/icons/vitejs.svg";
 
 // Skills Data Import End //
 
@@ -113,6 +114,12 @@ export const skills = [
     name: "TailwindCss",
     alt: "TailwindCss.png",
   },
+  {
+    id: 15,
+    image: Vite,
+    name: "Vite",
+    alt: "Vite.png",
+  },
 ];
 
 export const frontend = skills.filter((item) =>
@@ -123,7 +130,9 @@ export const backend = skills.filter((item) => [5, 13].includes(item.id));
 
 export const database = skills.filter((item) => [7, 10, 11].includes(item.id));
 
-export const others = skills.filter((item) => [4, 8, 6, 9].includes(item.id));
+export const others = skills.filter((item) =>
+  [4, 8, 6, 9, 15].includes(item.id)
+);
 
 // Project Data //
 
