@@ -55,7 +55,7 @@ const Services = (props) => {
             <Card
               title="API Integration"
               icon={<Waypoints size={40} />}
-              description="I connect frontend interfaces to backend services using RESTful or GraphQL APIs for dynamic, real-time functionality."
+              description="I connect frontend interfaces to backend services using RESTful for dynamic, real-time functionality."
             />
             <div className="separator">
               <div className="line"></div>

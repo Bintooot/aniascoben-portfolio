@@ -3,9 +3,11 @@ import "./Project.css";
 import ProjectCard from "../../Card/ProjectCard/Card";
 import { projectData } from "../../../data/data.js";
 import { motion } from "framer-motion";
+import { style } from "framer-motion/client";
 
 const Project = (props) => {
   const [data] = useState(projectData);
+
   return (
     <motion.section
       initial={{ opacity: 0, x: -50 }}

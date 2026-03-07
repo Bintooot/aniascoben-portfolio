@@ -33,7 +33,7 @@ const Hero = (props) => {
           </h3>
           <div className="button-box">
             <a href="CV.pdf" download="CV.pdf">
-              <Button title="Download CV" icon={<ArrowDownToLine />} />
+              <Button title="Download Resume" icon={<ArrowDownToLine />} />
             </a>
             <a href="#contact-me">
               <Button title="Hire Me" icon={<Mail />} />

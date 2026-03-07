@@ -24,8 +24,8 @@ const Card = (props) => {
           <a href={props.github} target="_blank" rel="nonoopener noreferrer">
             Github Repo
           </a>
-          <a href={props.live} target="_blank" rel="nonoopener noreferrer">
-            Demo
+          <a href={props.live || "#"} target="_blank" rel="nonoopener noreferrer">
+            {props.live ? "Demo" : "Unavailable"}
           </a>
         </div>
       </div>

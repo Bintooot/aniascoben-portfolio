@@ -27,13 +27,13 @@ const AboutMe = (props) => {
       >
         <h2>About Me</h2>
         <p>
-          I’m a web developer with a strong focus on front-end development and a
-          solid working knowledge of back-end technologies. I create responsive,
-          user-friendly websites using HTML, CSS, JavaScript , and frameworks
-          like React. I also have experience with basic server-side development
-          using Node.js, along with both SQL and NoSQL databases. I'm passionate
-          about building clean, functional web experiences and am committed to
-          continuous learning and growth in the field.
+          I’m a web developer focused on front-end development, with a solid
+          understanding of back-end technologies. I build responsive and user-friendly
+          interfaces using HTML, CSS, JavaScript, and modern frameworks like React.
+          I also have experience working with back-end tools such as Node.js and both
+          SQL and NoSQL databases, allowing me to understand and collaborate across the
+          full web development stack. I’m passionate about building clean, efficient
+          web applications and continuously improving my skills.
         </p>
         <ul className="info-list">
           <li className="info-list-item">
@@ -92,8 +92,8 @@ const AboutMe = (props) => {
         }}
         className="card-wrapper"
       >
-        <Card title="4 years" subtitle="Experience" />
-        <Card title="4 work" subtitle="Projects" />
+        <Card title="2 years" subtitle="Experience" />
+        <Card title="5 work" subtitle="Projects" />
       </motion.div>
     </section>
   );

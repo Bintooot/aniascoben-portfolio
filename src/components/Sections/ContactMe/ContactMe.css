@@ -14,6 +14,7 @@
 
 .contact-me-container > h2 {
   font-size: 5rem;
+  color: var(--accent);
 }
 
 .contact-me-container > p {
@@ -58,7 +59,9 @@
   content: "→";
   opacity: 0;
   transform: translateX(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
   position: absolute;
   left: -30px;
 }

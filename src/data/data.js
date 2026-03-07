@@ -14,6 +14,9 @@ import Node from "../assets/icons/Node.js.png";
 import React from "../assets/icons/React.png";
 import TailwindCss from "../assets/icons/TailwindCss.png";
 import Vite from "../assets/icons/vitejs.svg";
+import ERPNext from "../assets/icons/ERPNext.webp";
+import Docker from "../assets/icons/docker.svg";
+import PostgreSQL from "../assets/icons/postgresql.png";
 
 // Skills Data Import End //
 
@@ -49,88 +52,102 @@ export const skills = [
   },
   {
     id: 4,
-    image: Canva,
-    name: "Canva",
-    alt: "Canva.png",
-  },
-  {
-    id: 5,
     image: Express,
     name: "Express",
     alt: "Express.png",
   },
   {
-    id: 6,
+    id: 5,
     image: Figma,
     name: "Figma",
     alt: "Figma.png",
   },
   {
-    id: 7,
+    id: 6,
     image: Firebase,
     name: "Firebase",
     alt: "Firebase.png",
   },
   {
-    id: 8,
+    id: 7,
     image: Git,
     name: "Git",
     alt: "Git.png",
   },
   {
-    id: 9,
+    id: 8,
     image: Github,
     name: "Github",
     alt: "Github.png",
   },
   {
-    id: 10,
+    id: 9,
     image: MongoDB,
     name: "MongoDB",
     alt: "MongoDB.png",
   },
   {
-    id: 11,
+    id: 10,
     image: MySQL,
     name: "MySQL",
     alt: "MySQL.png",
   },
   {
-    id: 12,
+    id: 11,
     image: React,
     name: "React",
     alt: "React.png",
   },
   {
-    id: 13,
+    id: 12,
     image: Node,
     name: "Node",
     alt: "Node.png",
   },
   {
-    id: 14,
+    id: 13,
     image: TailwindCss,
     name: "TailwindCss",
     alt: "TailwindCss.png",
   },
   {
-    id: 15,
+    id: 14,
     image: Vite,
     name: "Vite",
     alt: "Vite.png",
   },
+  {
+    id: 15,
+    image: ERPNext,
+    name: "ERPNext",
+    alt: "ERPNext.webp",
+  },
+  {
+    id: 16,
+    image: Docker,
+    name: "Docker",
+    alt: "docker.svg",
+  },
+  {
+    id: 17,
+    image: PostgreSQL,
+    name: "PostgreSQL",
+    alt: "postgresql.svg",
+  },
 ];
 
 export const frontend = skills.filter((item) =>
-  [1, 2, 3, 12, 14].includes(item.id)
+  [1, 2, 3, 11, 13].includes(item.id),
 );
 
-export const backend = skills.filter((item) => [5, 13].includes(item.id));
+export const backend = skills.filter((item) => [4, 12].includes(item.id));
 
-export const database = skills.filter((item) => [7, 10, 11].includes(item.id));
+export const database = skills.filter((item) =>
+  [6, 9, 10, 17].includes(item.id),
+);
 
 export const others = skills.filter((item) =>
-  [4, 8, 6, 9, 15].includes(item.id)
+  [5, 7, 8, 14, 15, 16].includes(item.id),
 );
 
 // Project Data //
@@ -138,19 +155,6 @@ export const others = skills.filter((item) =>
 export const projectData = [
   {
     id: 1,
-    image: SmarTask,
-    name: "SmarTask",
-    alt: "SmarTask.png",
-    description:
-      "SmarTask is a full-stack task and team management web application designed to simplify workflows, improve collaboration, and help users manage tasks with clarity and ease.",
-    techStack: ["HTML", "CSS", "JavaScript", "React"],
-    time: "June 2025 – Ongoing",
-    github: "https://github.com/Bintooot/smartask",
-    live: "#",
-  },
-
-  {
-    id: 2,
     image: DevFinder,
     name: "DevFinder",
     alt: "DevFinder.jpeg",
@@ -162,7 +166,7 @@ export const projectData = [
     live: "https://dev-finder-bintooots-projects.vercel.app/",
   },
   {
-    id: 3,
+    id: 2,
     name: "Portfolio v.1 | Ben Raymond Aniasco",
     description:
       "This is my personal portfolio website, showcasing my skills, projects, and experiences. It features a modern design, responsive layout, and easy navigation to help visitors learn more about me and my work.",
@@ -173,7 +177,7 @@ export const projectData = [
     live: "https://benaniasco-portfolio.vercel.app",
   },
   {
-    id: 4,
+    id: 3,
     name: "Velienne - Landing Page",
     description:
       "A visually appealing landing page designed to showcase the Velienne Restaurant. It features a modern design, highlights the restaurant's offerings, and provides an easy-to-navigate interface for users to explore the menu and make reservations.",
@@ -184,7 +188,7 @@ export const projectData = [
     live: "https://velienne.vercel.app",
   },
   {
-    id: 5,
+    id: 4,
     name: "IoT Based Mobile Incubator Monitoring & Controller",
     description:
       "It is a mobile application that allows users to monitor and control the incubator. It also allows users to view the status of the incubator and the eggs inside it.",
@@ -192,10 +196,10 @@ export const projectData = [
     time: "October 2024 - November 2024",
     techStack: ["React Native", "CSS", "JavaScript", "Expo", "Firebase"],
     github: "https://github.com/Bintooot/incubator-app-controller",
-    live: "#",
+    live: false,
   },
   {
-    id: 6,
+    id: 5,
     name: "Request Management System",
     description:
       "This project focuses on managing user requests for chicks, specifically designed for government use. The system allows users to register, submit requests, track the status of their requests, and receive the chicks once approved. This web-based platform streamlines the process for individuals seeking chicks for their farms, helping the government efficiently manage and process these requests.",
@@ -211,6 +215,6 @@ export const projectData = [
       "MongoDB",
     ],
     github: "https://github.com/Bintooot/request_management_system.git",
-    live: "#",
+    live: false,
   },
 ];
