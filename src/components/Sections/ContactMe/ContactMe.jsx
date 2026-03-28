@@ -34,11 +34,11 @@ const ContactMe = (props) => {
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="tel:+639936736625">
               <span>
                 <Phone />
               </span>
-              09937637725
+              +63 993 673 6625
             </a>
           </li>
           <li>
