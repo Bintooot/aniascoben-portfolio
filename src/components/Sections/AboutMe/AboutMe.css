@@ -71,7 +71,9 @@ ul.info-list > li.info-list-item::before {
   left: -30px;
   opacity: 0;
   transform: translate(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 ul.info-list > li.info-list-item > a {

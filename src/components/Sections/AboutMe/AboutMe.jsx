@@ -1,10 +1,10 @@
 import React from "react";
 import {
   MapPinCheckInside,
-  Github,
-  Linkedin,
+  GraduationCap,
   Facebook,
   Instagram,
+  Github,
 } from "lucide-react";
 import "./AboutMe.css";
 import Card from "../../Card/AboutMeCard/Card";
@@ -40,19 +40,15 @@ const AboutMe = (props) => {
             <span>
               <MapPinCheckInside />
             </span>
-            <a href="#"> Tagum City, Davao del Norte, Philippines, 8100</a>
+            <p> Tagum City, Davao del Norte, Philippines, 8100</p>
           </li>
           <li className="info-list-item">
             <span>
-              <Github />
+              <GraduationCap />
             </span>
-            <a
-              href="https://github.com/Bintooot"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github
-            </a>
+            <p>
+              University of Mindanao Tagum College (UMTC)
+            </p>
           </li>
           <li className="info-list-item">
             <span>
@@ -68,14 +64,14 @@ const AboutMe = (props) => {
           </li>
           <li className="info-list-item">
             <span>
-              <Facebook />
+              <Github />
             </span>
             <a
-              href="https://www.facebook.com/bintooot18"
+              href="https://github.com/Bintooot"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Facebook
+              Github
             </a>
           </li>
         </ul>
