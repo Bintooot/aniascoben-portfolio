@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { AlignRight, X } from "lucide-react";
-import logo from "../../assets/icons/logo.png";
 import "./Header.css";
 
 const Header = () => {
@@ -27,7 +26,7 @@ const Header = () => {
   return (
     <section className="header-section">
       <div className="header-content">
-        <img src={logo} alt="logo.png" />
+        <h2>B.R.A</h2>
         <AlignRight
           style={{ color: "#fff" }}
           size={30}

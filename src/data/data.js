@@ -64,72 +64,60 @@ export const skills = [
   },
   {
     id: 6,
-    image: Firebase,
-    name: "Firebase",
-    alt: "Firebase.png",
-  },
-  {
-    id: 7,
     image: Git,
     name: "Git",
     alt: "Git.png",
   },
   {
-    id: 8,
+    id: 7,
     image: Github,
     name: "Github",
     alt: "Github.png",
   },
   {
-    id: 9,
+    id: 8,
     image: MongoDB,
     name: "MongoDB",
     alt: "MongoDB.png",
   },
   {
-    id: 10,
-    image: MySQL,
-    name: "MySQL",
-    alt: "MySQL.png",
-  },
-  {
-    id: 11,
+    id: 9,
     image: React,
     name: "React",
     alt: "React.png",
   },
   {
-    id: 12,
+    id: 10,
     image: Node,
     name: "Node",
     alt: "Node.png",
   },
   {
-    id: 13,
+    id: 11,
     image: TailwindCss,
     name: "TailwindCss",
     alt: "TailwindCss.png",
   },
   {
-    id: 14,
+    id: 12,
     image: Vite,
     name: "Vite",
     alt: "Vite.png",
   },
   {
-    id: 15,
+    id: 13,
     image: ERPNext,
     name: "ERPNext",
     alt: "ERPNext.webp",
   },
   {
-    id: 16,
+    id: 14,
     image: Docker,
     name: "Docker",
     alt: "docker.svg",
   },
   {
-    id: 17,
+    id: 15,
     image: PostgreSQL,
     name: "PostgreSQL",
     alt: "postgresql.svg",
@@ -137,17 +125,15 @@ export const skills = [
 ];
 
 export const frontend = skills.filter((item) =>
-  [1, 2, 3, 11, 13].includes(item.id),
+  [1, 2, 3, 9, 11].includes(item.id),
 );
 
-export const backend = skills.filter((item) => [4, 12].includes(item.id));
+export const backend = skills.filter((item) => [4, 10].includes(item.id));
 
-export const database = skills.filter((item) =>
-  [6, 9, 10, 17].includes(item.id),
-);
+export const database = skills.filter((item) => [8, 15].includes(item.id));
 
 export const others = skills.filter((item) =>
-  [5, 7, 8, 14, 15, 16].includes(item.id),
+  [5, 6, 7, 12, 13, 14].includes(item.id),
 );
 
 // Project Data //
@@ -159,7 +145,7 @@ export const projectData = [
     name: "DevFinder",
     alt: "DevFinder.jpeg",
     description:
-      "DevFinder is a responsive web app that allows users to search for GitHub profiles and view key information including avatar, bio, repositories, followers, and more.",
+      "DevFinder is a responsive web app that lets users search for GitHub profiles and view key details like avatar, bio, repositories, and followers. Its purpose is to demonstrate basic API integration and the ability to handle dynamic data in a clean, user-friendly interface.",
     techStack: ["HTML", "CSS", "JavaScript"],
     time: "June 2025 - June 2025",
     github: "https://github.com/Bintooot/DevFinder",

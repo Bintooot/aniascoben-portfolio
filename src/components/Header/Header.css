@@ -27,9 +27,12 @@
   align-items: center;
 }
 
-.header-section > .header-content > img {
-  width: 80px;
+.header-section > .header-content > h2 {
   height: 80px;
+  flex-wrap: wrap;
+  align-content: center;
+  font-size: 1.8rem;
+  font-family: var(--font-sans);
 }
 
 #toogle {
@@ -102,7 +105,9 @@ ul.link-wrapper > li.link-item::after {
   right: -50px;
   opacity: 0;
   transform: translateX(20px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 ul.link-wrapper > li.link-item > a.active {

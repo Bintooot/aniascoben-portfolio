@@ -26,7 +26,7 @@ const Hero = (props) => {
         <div className="hero-info">
           <h1>FRONT-END DEVELOPER</h1>
           <h2>
-            Turning ideas into interactive reality—one line of code at a time.
+            Turning ideas into interactive reality one line of code at a time.
           </h2>
           <h3>
             → Hello, I’m <span>Ben Raymond Aniasco</span>
@@ -34,9 +34,6 @@ const Hero = (props) => {
           <div className="button-box">
             <a href="CV.pdf" download="CV.pdf">
               <Button title="Download Resume" icon={<ArrowDownToLine />} />
-            </a>
-            <a href="#contact-me">
-              <Button title="Hire Me" icon={<Mail />} />
             </a>
           </div>
         </div>
