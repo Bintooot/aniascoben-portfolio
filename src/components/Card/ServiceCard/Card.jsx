@@ -1,13 +1,23 @@
 import React from "react";
 import "./Card.css";
 
-const Card = (props) => {
+const Card = ({ icon, title, description, tags }) => {
   return (
-    <div className="box-service">
-      <div className="box-header">
-        <span>{props.icon}</span> <h3>{props.title}</h3>
+    <div className="service-card">
+      <div className="service-card-top">
+        <div className="service-icon-wrapper">{icon}</div>
+        <h3 className="service-card-title">{title}</h3>
       </div>
-      <p className="description">{props.description}</p>
+      <p className="service-card-desc">{description}</p>
+      {tags && tags.length > 0 && (
+        <div className="service-tags">
+          {tags.map((tag) => (
+            <span key={tag} className="service-tag">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

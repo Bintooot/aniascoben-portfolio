@@ -1,11 +1,12 @@
 import React from "react";
 import "./Card.css";
 
-const Card = (props) => {
+const Card = ({ title, subtitle, icon }) => {
   return (
-    <div className="box">
-      <h3>{props.title}</h3>
-      <p>{props.subtitle}</p>
+    <div className="about-stat-card">
+      {icon && <div className="stat-card-icon">{icon}</div>}
+      <h3 className="stat-card-title">{title}</h3>
+      <p className="stat-card-subtitle">{subtitle}</p>
     </div>
   );
 };

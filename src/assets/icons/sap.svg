@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 60" width="120" height="60">
+  <defs>
+    <linearGradient id="sapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#008FD3" />
+      <stop offset="100%" stop-color="#005691" />
+    </linearGradient>
+  </defs>
+  <path fill="url(#sapGrad)" d="M0,4 C0,1.8 1.8,0 4,0 L85,0 C88,0 90.5,1.8 92,4.5 L119,55.5 C120.5,58 118.8,60 116,60 L4,60 C1.8,60 0,58.2 0,56 Z" />
+  <text x="18" y="42" fill="#ffffff" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="32" letter-spacing="1">SAP</text>
+</svg>

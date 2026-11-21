@@ -1,38 +1,72 @@
-.skills-box {
-  width: 250px;
-  height: 60px;
+.skills-card {
+  width: 100%;
+  height: 72px;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  border: 1px solid transparent;
-  border-image-source: var(--border-right-left);
-  border-image-slice: 1;
-  background: rgba(255, 255, 255, 0.05);
+  gap: 14px;
+  padding: 12px 18px;
+  background: rgba(18, 17, 24, 0.75);
+  border: 1px solid rgba(142, 45, 226, 0.22);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  border-radius: 0;
   cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-.skills-box:hover {
-  transition: all 0.3s ease;
-  transform: scale(1.3) rotate(5deg);
-  box-shadow: 0 0 10px var(--shadow);
-  z-index: 1;
-  color: var(--accent);
+.skills-card:hover {
+  transform: translateY(-3px) scale(1.02);
+  border-color: var(--accent);
+  background: rgba(26, 24, 36, 0.95);
+  box-shadow: 0 10px 25px -5px rgba(142, 45, 226, 0.3),
+              0 0 15px rgba(142, 45, 226, 0.2);
 }
 
-.skills-box > .image-box {
-  width: 30%;
+.skills-icon-box {
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
-.skills-box > .image-box > img {
-  width: 40px;
-  height: 40px;
+.skills-icon-box img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  transition: transform 0.25s ease;
 }
 
-.skills-box > h3 {
-  width: 50%;
+.skills-card:hover .skills-icon-box img {
+  transform: scale(1.1);
+}
+
+.skills-meta {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.skills-title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: -0.2px;
+}
+
+.skills-category-badge {
+  font-size: 0.72rem;
+  color: var(--muted-font);
+  font-family: var(--font-mono);
+  margin-top: 1px;
+}
+
+.skills-card:hover .skills-title {
+  color: var(--accent-bright);
 }

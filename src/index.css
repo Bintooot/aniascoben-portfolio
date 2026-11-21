@@ -1,32 +1,98 @@
-* {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 :root {
-  --primary-background: #000000;
-  --content-card: #151414;
-  --main-font: #fff;
-  --secondary-font: #d9d9d9;
-  --border-right-left: linear-gradient(to right, #8e2de2, #4a00e0);
+  --primary-background: #08080c;
+  --content-card: #121118;
+  --content-card-hover: #181722;
+  --main-font: #ffffff;
+  --secondary-font: #b0aec1;
+  --muted-font: #6e6b84;
+  --border-right-left: linear-gradient(135deg, #8e2de2, #4a00e0);
   --border-top-bottom: linear-gradient(to bottom, #8e2de2, #4a00e0);
   --background-circle: radial-gradient(circle, #8e2de2, #4a00e0);
-  --background-span: linear-gradient(to right, #8e2de2, #4e197c);
+  --background-span: linear-gradient(135deg, #8e2de2, #4e197c);
   --shadow: #8e2de2;
   --accent: #c084fc;
+  --accent-bright: #d8b4fe;
+  --border-subtle: rgba(142, 45, 226, 0.25);
+  --card-glow: rgba(142, 45, 226, 0.15);
   --font-sans: "Montserrat", sans-serif;
   --font-mono: "Roboto Mono", monospace;
 }
 
-html,
-body {
+html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
+  scroll-padding-top: 90px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
+  width: 100%;
+  max-width: 100%;
   color: var(--main-font);
   background: var(--primary-background);
+  font-family: var(--font-sans);
   cursor: default;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+main {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+::selection {
+  background: #8e2de2;
+  color: #ffffff;
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #8e2de2, #4a00e0);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #a855f7, #6366f1);
+}
+
+/* Accessible Focus Ring */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Responsive Image Guard */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

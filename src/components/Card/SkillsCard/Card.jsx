@@ -1,13 +1,16 @@
 import React from "react";
 import "./Card.css";
 
-const Card = (props) => {
+const Card = ({ title, image, alt, category }) => {
   return (
-    <div className="skills-box" key={props.key}>
-      <div className="image-box">
-        <img src={props.image} alt={props.alt} />
+    <div className="skills-card">
+      <div className="skills-icon-box">
+        <img src={image} alt={alt || `${title} icon`} loading="lazy" />
       </div>
-      <h3>{props.title}</h3>
+      <div className="skills-meta">
+        <h3 className="skills-title">{title}</h3>
+        {category && <span className="skills-category-badge">{category}</span>}
+      </div>
     </div>
   );
 };

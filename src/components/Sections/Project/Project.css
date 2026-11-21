@@ -1,85 +1,47 @@
 .project-section {
   width: 100%;
-  font-family: var(--font-sans);
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .project-container {
   width: 80%;
-  margin: 50px auto;
+  max-width: 1360px;
+  margin: 0 auto;
 }
 
 .project-header {
-  text-align: end;
-  position: relative;
-  padding-right: 25px;
+  margin-bottom: 50px;
 }
 
-.project-header > h2 {
-  font-size: 5.6rem;
-  font-weight: 600;
-}
-
-.project-header > p {
+.project-subtitle {
+  font-size: 1.15rem;
   color: var(--secondary-font);
-  font-size: 1.5rem;
-}
-
-.project-header::before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 15px;
-  right: 0;
-  background: var(--border-top-bottom);
+  font-family: var(--font-mono);
+  margin-top: 14px;
 }
 
 .project-data-wrapper {
-  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .project-container {
     width: 85%;
   }
-  .project-header > h2 {
-    font-size: 5rem;
-  }
 }
 
-/* Tablet Mode */
-/* width <= 768px */
-@media (max-width: 768px) {
+@media (max-width: 880px) {
   .project-container {
     width: 90%;
   }
-  .project-header > h2 {
-    font-size: 4.5rem;
-  }
-  .project-header > p {
-    font-size: 1.3rem;
-  }
 }
 
-/* Mobile Mode */
-/* width <= 426px */
-
-@media (max-width: 426px) {
-  .project-header > h2 {
-    font-size: 4rem;
-  }
-  .project-header > p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 375px) {
-  .project-header > h2 {
-    font-size: 3.5rem;
-  }
-}
-
-@media (max-width: 321px) {
-  .project-header > h2 {
-    font-size: 3rem;
+@media (max-width: 480px) {
+  .project-container {
+    width: 94%;
   }
 }

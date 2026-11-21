@@ -3,11 +3,10 @@ import "./Spiner.css";
 
 const Spinner = () => {
   return (
-    <div class="circle-wrapper">
-      <div class="slider-wrapper">
-        <div class="circle-content">
-          <div class="circle-center"></div>
-        </div>
+    <div className="spinner-overlay" role="status" aria-label="Loading portfolio">
+      <div className="spinner-container">
+        <div className="spinner-ring" />
+        <div className="spinner-brand">B.R.A</div>
       </div>
     </div>
   );

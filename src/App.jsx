@@ -8,36 +8,37 @@ import Project from "./components/Sections/Project/Project";
 import ContactMe from "./components/Sections/ContactMe/ContactMe";
 import Footer from "./components/Sections/Footer/Footer";
 import Spinner from "./components/Spinner/Spinner";
+import BackToTop from "./components/BackToTop/BackToTop";
 
 const App = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
-
+    // Quick, elegant loading entrance
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 500);
 
     return () => clearTimeout(timer);
   }, []);
 
+  if (loading) {
+    return <Spinner />;
+  }
+
   return (
     <>
-      {loading ? (
-        <Spinner />
-      ) : (
-        <>
-          <Header />
-          <Hero id="home" />
-          <AboutMe id="about-me" />
-          <Services id="services" />
-          <Skills id="skills" />
-          <Project id="projects" />
-          <ContactMe id="contact-me" />
-          <Footer />
-        </>
-      )}
+      <Header />
+      <main>
+        <Hero id="home" />
+        <AboutMe id="about-me" />
+        <Services id="services" />
+        <Skills id="skills" />
+        <Project id="projects" />
+        <ContactMe id="contact-me" />
+      </main>
+      <Footer />
+      <BackToTop />
     </>
   );
 };
