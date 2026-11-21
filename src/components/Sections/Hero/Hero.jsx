@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import photo from "../../../assets/images/photo-me.JPG";
+import photo from "../../../assets/images/photo-me.jpg";
 import { ArrowDownToLine, Eye, Github, Linkedin, Mail, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import { personalInfo } from "../../../data/data";
